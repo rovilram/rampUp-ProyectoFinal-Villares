@@ -1,4 +1,4 @@
-☐ TIENE QUE PASAR VALIDADOR!!!!
+☐ TIENE QUE PASAR VALIDADOR!!!! Web hecha solo con HTML5 y CSS3
 PÁGINAS:
     ☐ index.html Página de bienvenida
     ☐ biography.html Biografía
@@ -6,8 +6,7 @@ PÁGINAS:
     ☐ contact.html Información de contacto
 
 REQUERIMIENTOS:
-    ☐ Usar GIT
-    ☐ Solo HTML5 y CSS3
+    ✔ Usar GIT @done(21-02-06 09:56)
     ☐ Etiquetas SEMÁNTICAS
     ☐ Tipografía personalizada
     ☐ Menú de navegación CON TRANSICIÓN
@@ -17,3 +16,9 @@ REQUERIMIENTOS:
     ☐ Usar FLEX para maquetar TODOS los bloques
     ☐ Tiene que ser Responsive
 
+RECURSOS PARA HACER EL PROYECTO:
+    ☐ CSS Máquina de escribir: https://codepen.io/JyGProyectosWeb/pen/rxBqOg
+    ☐ Diseño: https://www.useit.es/
+    ✔ NormalizeCSS: https://necolas.github.io/normalize.css/ @done(21-02-06 11:43)
+    ☐ Fluid Typography: https://css-tricks.com/snippets/css/fluid-typography/
+    ☐ https://codepen.io/designcouch/pen/Atyop Entender y hacerlo por mi cuenta
