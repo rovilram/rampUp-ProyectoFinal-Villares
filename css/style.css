@@ -30,12 +30,13 @@ h2,h3{
 }
 .footerWrapper{
   width: 94%;
-  margin 0 2%;
+  margin: 0 2%;
   display:flex;
-  display:row;
-  flex-wrap: wrap;
+  flex-direction:column;
   justify-content: center;
+  align-items: center;
 }
+
 
 .headerWrapper {
   display: flex;
@@ -71,7 +72,8 @@ h1.logo {
   /* position: absolute;
   top: 0;
   padding: 0; */
-  margin: 0 10px;
+  margin: 0px;
+  padding:0;
 }
 
 
@@ -131,10 +133,7 @@ img.responsive {
 
 /* nav Mobile styles  */
 nav {
-  /* position: absolute;
-  top: 10px;
-  right: 10px; */
-  
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -148,9 +147,6 @@ nav {
   color: var(--textSecondaryColor);
   text-decoration: none;
   text-align: right;
-  /* position: absolute;
-  top:0;
-  right:0; */
   z-index:1;
 }
 #menuIconClose {
@@ -195,7 +191,7 @@ Es para ver si consigo hacer la animaciín cuando
 desaparece .mobileMenu */
 /*TODO: Intentar hacer animación de desaparecer menú*/
 #menuIcon:not(:target) ~ .mobileMenu  {
-  display: block;
+  display: none;
   z-index: 0;
   text-align: center;
   padding: 0;
@@ -250,4 +246,27 @@ desaparece .mobileMenu */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid var(--backgroundColor);
+  border-bottom: 1px solid var(--backgroundColor);
+}
+
+.article h3 {
+  margin:5px;
+}
+
+.article .articleLink {
+  display:inline-block;
+  background-color:var(--backgroundColor);
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color:var(--textSecondaryColor)
+
 }
