@@ -1,6 +1,6 @@
 ☐ TIENE QUE PASAR VALIDADOR!!!! Web hecha solo con HTML5 y CSS3
 PÁGINAS:
-    ☐ index.html Página de bienvenida
+    ✔ index.html Página de bienvenida @done(21-02-07 20:37)
     ☐ biography.html Biografía
     ☐ portfolio.html Ejemplos de tu trabajo
     ☐ contact.html Información de contacto
@@ -9,6 +9,7 @@ REQUERIMIENTOS:
     ✔ Usar GIT @done(21-02-06 09:56)
     ☐ Etiquetas SEMÁNTICAS
     ✔ Tipografía personalizada @done(21-02-07 14:19)
+    ☐ REVISAR TIPOGRAFÍA (No carga en firefox)
     ☐ Menú de navegación CON TRANSICIÓN
     ☐ Hacer animación CSS 
     ☐ Utilizar VARIABLES css para COLORES

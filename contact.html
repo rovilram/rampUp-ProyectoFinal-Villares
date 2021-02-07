@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AVE-Dev - Desarrollo web - Contactar</title>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&family=Roboto+Slab" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="headerWrapper">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="AVE Dev Logo" class="logo">
+                </a>
+                <nav class="navDesktop">
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="biography.html">¿Quien soy?</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="portfolio.html">Mi portfolio</a>
+                            <!-- TODO: Cambiar referencias por los proyectos del portfolio -->
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">PROYECTO 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">PROYECTO 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">PROYECTO 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contactar</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="navMobile">
+                    <a id="menuIcon" href="#menuIcon">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <a id="menuIconClose" href="#">
+                        <i class="fas fa-times"></i>
+                    </a>
+                    <div class="mobileMenu">
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="biography.html">¿Quien soy?</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html">Mi portfolio</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contactar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h1>Contacta conmigo</h1>
+            <div class="mainWrapper">
+                <section class="section">
+                    <h2>Formas de contacto</h2>
+                    <div>Puedes contactar conmigo de múltiples formas.... aquí te dejo unas cuantas.</div>
+                    <div class="sectionWrapper">
+                        <article class="article">
+                            <h3>Por carta</h3>
+                            <div class="articleWrapper">
+                                <div class="centered">
+                                    <i class="fas fa-mail-bulk"></i>
+                                </div>
+                                <p class="centered">
+                                    Anatolio Fuentes
+                                    <br>
+                                    13, Rue Percebe
+                                    <br>
+                                    (Villarriba, Spain)
+                                </p>
+                            </div>
+                        </article>
+                        <article class="article">
+                            <h3>Por teléfono</h3>
+                            <div class="articleWrapper">
+                                <div class="centered">
+                                    <i class="fas fa-phone-square"></i>
+                                </div>
+                                <p class="centered">
+                                    <a class="phone" href="tel:+346666666">+34 666 66 66</a>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="article">
+                            <h3>En mis redes sociales</h3>
+                            <div class="articleWrapper">
+                                <div class="centered">
+                                    <a class="linkedin" href="http://www.linkedin.com">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                                <div class="centered">
+                                    <a class="twitter" href="http://www.twitter.com">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="centered">
+                                    <a class="facebook" href="http://www.facebook.com">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="centered">
+                                    <a class="instagram" href="http://www.instagram.com">
+                                        <i class="fab fa-instagram-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article">
+                            <h3>Por correo electrónico</h3>
+                            <div class="articleWrapper">
+                                <div class="centered">
+                                    <i class="fas fa-at"></i>
+                                </div>
+                                <div class="centered">
+                                    <a class="email" href="mailto://anatoliofuentes@avedev.com">anatoliofuentes@avedev.com</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article">
+                            <div class="articleWrapper">
+                                <h3>Rellenando este formulario</h3>
+                                <div class="formulario">
+                                    <form action="mailto://anatoliofuentes@avedev.com">
+                                        <input
+                                            type="text"
+                                            name="nombre"
+                                            id="nombre"
+                                            placeholder="Nombre y Apellidos"
+                                        >
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                            placeholder="Correo electrónico"
+                                        >
+                                        <textarea
+                                            name="comentario"
+                                            id="comentario"
+                                            cols="30"
+                                            rows="10"
+                                            placeholder="Comentario"
+                                        ></textarea>
+                                        <input type="reset" value="Borrar">
+                                        <input type="submit" value="Enviar">
+                                    </form>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footerWrapper">
+                <div class="footerName">Anatolio Fuentes</div>
+                <div class="footerAdress"> 13, Rue Percebe (Villarriba, Spain)</div>
+                <div class="footerPhone">+34 666 66 66</div>
+                <div class="footerMail">
+                    <a href="mailto://anatoliofuentes@avedev.com">anatoliofuentes@avedev.com</a>
+                </div>
+            </div>
+            <small class="copy">&COPY; Copyright 2021 - AVE Dev</small>
+        </footer>
+    </body>
+</html>

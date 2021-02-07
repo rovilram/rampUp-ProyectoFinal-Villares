@@ -90,13 +90,18 @@ h1.introductionText {
     cursorBlink 1s infinite;
 }
 
-h1 > a {
-  color: var(--textSecondaryColor);
-  text-decoration: none;
+.centered {
+  text-align: center;
 }
 
 .navDesktop {
   display: none;
+}
+
+a.phone,
+a.email {
+  text-decoration: none;
+  color:var(--textPrincipalColor)
 }
 
 img.responsive {
@@ -110,6 +115,33 @@ img.responsive {
   flex-direction: column;
   align-content: center;
 }
+
+a.linkedin {
+  color:var(--textPrincipalColor);
+}
+a.linkedin:hover {
+  color:#0e76a8;
+}
+a.facebook {
+  color:var(--textPrincipalColor);
+}
+a.facebook:hover {
+  color:#3b5998 ;
+}
+a.twitter {
+  color:var(--textPrincipalColor);
+}
+a.twitter:hover {
+  color:#00acee ;
+}
+a.instagram {
+  color:var(--textPrincipalColor);
+}
+a.instagram:hover {
+  color:#3f729b ;
+}
+
+
 
 /* ANIMACIONES CSS*/
 @keyframes typewriterEffect {
