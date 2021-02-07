@@ -8,7 +8,7 @@ PÁGINAS:
 REQUERIMIENTOS:
     ✔ Usar GIT @done(21-02-06 09:56)
     ☐ Etiquetas SEMÁNTICAS
-    ☐ Tipografía personalizada
+    ✔ Tipografía personalizada @done(21-02-07 14:19)
     ☐ Menú de navegación CON TRANSICIÓN
     ☐ Hacer animación CSS 
     ☐ Utilizar VARIABLES css para COLORES

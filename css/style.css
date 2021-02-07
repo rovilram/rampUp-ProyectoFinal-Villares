@@ -2,6 +2,7 @@
   --backgroundColor: #ff6600;
   --textSecondaryColor: White;
   --backgroundSecondaryColor: #999;
+  --textPrincipalColor:black;-
 }
 
 /* TAMAÑO MÓVIL: 420px o MENOS */
@@ -10,12 +11,13 @@ body {
   font-family: "Roboto Slab", serif;
   font-weight: normal;
 }
-h1, h2 {
-  font-family: 'Work Sans', sans-serif;
+h1,
+h2 {
+  font-family: "Work Sans", sans-serif;
   font-weight: 600;
 }
 h3 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
 
@@ -70,22 +72,15 @@ div.introduction {
   left: 0;
 }
 
-/* h1.logo {
-    margin: 0px;
-    padding: 0;
-} */
-
 img.logo {
   width: 100px;
-  border-radius:50%;
+  border-radius: 50%;
 }
-
-
 
 h1.introductionText {
   font-family: monospace;
   font-weight: bold;
-  font-size:1rem;
+  font-size: 1rem;
   color: var(--textSecondaryColor);
   overflow: hidden;
   white-space: nowrap;
@@ -284,18 +279,11 @@ desaparece .mobileMenu */
     height: 150px;
   }
   h1.introductionText {
-    font-size:1.75rem;
-  }
-  .navMobile {
-    display: none;
-  }
-  .navDesktop {
-    display: block;
-    color: var(--textSecondaryColor);
+    font-size: 1.75rem;
   }
   .headerWrapper {
     flex-direction: column;
-    justify-content: space-around;
+    justify-content:center;
   }
   .article {
     display: flex;
@@ -304,17 +292,107 @@ desaparece .mobileMenu */
     display: flex;
     justify-content: space-between;
   }
-
+  
   .articleImg {
     max-width: 33%;
     margin: 5px;
   }
-}
+  .navMobile {
+    display: none;
+  }
+  .navDesktop {
+    display:flex;
+    min-width: 100%;
+  }
+  .navDesktop a {
+    text-decoration: none;
+    color:var(--textSecondaryColor)
+  }
+  .navDesktop ul.menu, .navDesktop ul.submenu{
+    list-style-type: none;
+    padding: 0; 
+    text-align: center;
+  }
+  .navDesktop ul.menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  ul.menu li {
+    flex-grow: 1;
+    padding: 0px;
+  }
+  
+  ul.menu li:hover a {
+    color:var(--textPrincipalColor);
+    transform: color 2s;
+  }
+  
+  ul.menu li.dropdown {
+    position:relative;
+    padding-bottom:0px;
+    
+  }
+  .navDesktop ul.submenu {
+    display:none;
+    opacity:0;
+    animation: submenuAnimation 2s;
 
+  }
+  
+  li.dropdown:hover {
+    background-color: var(--textSecondaryColor);
+    border-radius: 10px;
+    z-index:2;
+  }
+
+  li.dropdown:not(:hover) ul.submenu{
+    animation: submenuAnimationBack 2s;
+  }
+  
+  li.dropdown:hover ul.submenu{
+    width:100%;
+    display:block;
+    opacity:1;
+    position:absolute;
+    left:0;
+    top:20px;
+    background-color: var(--textSecondaryColor);
+    border-radius: 10px;
+    padding: 15px 0;
+    z-index:0;
+  }
+  
+
+  @keyframes submenuAnimation {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  }
+  /* TODO: No soy capaz de hacer la animación de regreso. Preguntar.... */
+  @keyframes submenuAnimationBack {
+    from {
+      opacity:1;
+    }
+    to {
+      opacity:0;
+    }
+  }
+
+  ul.submenu li {
+    padding: 10px 0;
+    font-size:0.75rem;
+  }
+
+}
 /* TAMAÑO DESKTOP: DESDE 961px*/
 @media screen and (min-width: 961px) {
   h1.introductionText {
-    font-size:4rem;
+    font-size: 4rem;
   }
   .mainWrapper {
     width: 960px;
@@ -336,13 +414,12 @@ desaparece .mobileMenu */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items:flex-end;
+    align-items: flex-end;
   }
 
-  .article{
+  .article {
     max-width: 45%;
     border-bottom-style: hidden;
     border-top-style: hidden;
   }
-
 }
