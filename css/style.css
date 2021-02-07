@@ -1,41 +1,95 @@
+:root {
+  --backgroundColor: #ff6600;
+  --textSecondaryColor:White;
+  --backgroundSecondaryColor:#999;
+  
+}
+
 /* TAMAÑO MÓVIL: 420px o MENOS */
 body {
   margin: 0;
 }
+
+h2,h3{
+  color:var(--backgroundColor);
+}
 .header {
-  position:relative;
+  display: flex;
+  height: 100px;
+  background-color: var(--backgroundColor);
+}
+.footer 
+{
+  height: 100px;
+  background-color: var(--backgroundColor);
+  margin-top:10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.footerWrapper{
+  width: 94%;
+  margin 0 2%;
+  display:flex;
+  display:row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.headerWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 96%;
+  margin: 0 2%;
+  top:0;
+}
+
+.introductionWrapper {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 div.introduction {
   /* para posicionar donde queremos sobre la foto */
+  /* position:absolute;
+  top: 100px; */
   position:absolute;
-  top:100px;
   display: flex;
   justify-content: center;
-  width:100%;
-  left:0;
+  width: 100%;
+  left: 0;
+  font-size: x-large;
+  font-weight: bold;
+  
 }
 
 h1.logo {
-  position:absolute;
-  top:0;
+  /* position: absolute;
+  top: 0;
+  padding: 0; */
+  margin: 0 10px;
 }
 
 
 p.introductionText {
-
   font-family: monospace;
+  font-size: x-large;
   font-weight: bold;
-  color:whitesmoke;
+  color: var(--textSecondaryColor);
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
-  border-right:1px solid whitesmoke;
-  animation: typewriterEffect 5s steps(40) infinite alternate, cursorBlink 1s infinite;
+  border-right: 1px solid var(--textSecondaryColor);
+  animation: typewriterEffect 5s steps(40) infinite alternate,
+    cursorBlink 1s infinite;
 }
 
 h1 > a {
-  color: white;
+  color: var(--textSecondaryColor);
   text-decoration: none;
 }
 
@@ -43,15 +97,14 @@ nav.navDesktop {
   display: none;
 }
 
-nav.navMobile {
-  font-size: x-large;
-}
-
 img.responsive {
   width: 100%;
 }
 
+
 .mainWrapper {
+  width:98%;
+  margin: 0 1%;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -64,15 +117,137 @@ img.responsive {
   }
   100% {
     width: 100%;
-
   }
 }
 
 @keyframes cursorBlink {
   0% {
-    border-color:black;
+    border-color: black;
   }
   100% {
-    border-color:white;
+    border-color: var(--textSecondaryColor);
   }
+}
+
+/* nav Mobile styles  */
+nav {
+  /* position: absolute;
+  top: 10px;
+  right: 10px; */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+}
+#menuIcon {
+  display: block;
+  font-size: xx-large;
+  padding: 0;
+  color: var(--textSecondaryColor);
+  text-decoration: none;
+  text-align: right;
+  /* position: absolute;
+  top:0;
+  right:0; */
+  z-index:1;
+}
+#menuIconClose {
+  display: none;
+  padding: 10px 15px;
+  color: var(--textSecondaryColor);
+  background-color: var(--backgroundColor);
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: x-large;
+  text-align: right;
+  z-index: 0;
+}
+#menuIcon:target {
+  display:none;
+}
+#menuIcon:target + #menuIconClose{
+  display:block;
+  position:fixed;
+  top:40px;
+  right: 40px;
+  opacity:1;
+  z-index:2
+}
+
+#menuIcon:target ~ .mobileMenu {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 95%;
+  margin: 2.5% 2.5%;
+  background-color: var(--backgroundSecondaryColor);
+  opacity:0.9;  
+  z-index: 1;
+  animation: mobileMenuAnimation 1s ease;
+}
+
+/* esta es una fomra rara de llamar a .mobileMenu
+Es para ver si consigo hacer la animaciín cuando 
+desaparece .mobileMenu */
+/*TODO: Intentar hacer animación de desaparecer menú*/
+#menuIcon:not(:target) ~ .mobileMenu  {
+  display: block;
+  z-index: 0;
+  text-align: center;
+  padding: 0;
+  opacity:0;
+  animation: mobileMenuAnimationBack 1s ease;
+}
+
+
+
+@keyframes mobileMenuAnimation {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:0.95;
+  }
+}
+
+@keyframes mobileMenuAnimationBack {
+  from {
+    opacity:0.95;
+  }
+  to {
+    opacity:0;
+  }
+}
+
+.mobileMenu ul {
+  height:100%;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobileMenu li {
+  min-height: 25%;
+  border-bottom: 1px solid var(--textSecondaryColor);
+
+}
+.mobileMenu a {
+  display:block;
+  height:100%;
+  width:100%;
+  text-decoration: none;
+  color:var(--backgroundColor);
+  font-weight: bold;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

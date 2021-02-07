@@ -17,8 +17,8 @@ REQUERIMIENTOS:
     ☐ Tiene que ser Responsive
 
 RECURSOS PARA HACER EL PROYECTO:
-    ☐ CSS Máquina de escribir: https://codepen.io/JyGProyectosWeb/pen/rxBqOg
+    ✘ Menu hamburguesa: https://codepen.io/designcouch/pen/Atyop @cancelled(21-02-07 02:30)
     ☐ Diseño: https://www.useit.es/
     ✔ NormalizeCSS: https://necolas.github.io/normalize.css/ @done(21-02-06 11:43)
     ☐ Fluid Typography: https://css-tricks.com/snippets/css/fluid-typography/
-    ☐ https://css-tricks.com/snippets/css/typewriter-effect/ Entender y hacerlo por mi cuenta  
+    ✔ https://css-tricks.com/snippets/css/typewriter-effect/ Entender y hacerlo por mi cuenta @done(21-02-06 19:42)
