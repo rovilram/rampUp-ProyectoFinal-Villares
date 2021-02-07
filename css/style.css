@@ -2,10 +2,10 @@
   --backgroundColor: #ff6600;
   --textSecondaryColor: White;
   --backgroundSecondaryColor: #999;
-  --textPrincipalColor:black;-
+  --textPrincipalColor:black;
 }
 
-/* TAMAÑO MÓVIL: 420px o MENOS */
+/* TAMAÑO MÓVIL: 420px o MENOS*/
 body {
   margin: 0;
   font-family: "Roboto Slab", serif;
@@ -326,7 +326,6 @@ desaparece .mobileMenu */
   
   ul.menu li:hover a {
     color:var(--textPrincipalColor);
-    transform: color 2s;
   }
   
   ul.menu li.dropdown {
