@@ -339,6 +339,21 @@ desaparece .mobileMenu */
     max-width: 33%;
     margin: 5px;
   }
+
+  .article.about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .article.about {
+    flex-direction: row;
+  }
+  .article.about *{
+    max-width: 50%;
+  }
+
+
   .navMobile {
     display: none;
   }
@@ -449,13 +464,8 @@ desaparece .mobileMenu */
   .sectionWrapper {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-
-  .sectionWrapper.contact {
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .articleWrapper.contact * {
