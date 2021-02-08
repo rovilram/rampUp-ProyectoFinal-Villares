@@ -2,7 +2,7 @@
   --backgroundColor: #ff6600;
   --textSecondaryColor: White;
   --backgroundSecondaryColor: #999;
-  --textPrincipalColor:black;
+  --textPrincipalColor: black;
 }
 
 /* TAMAÑO MÓVIL: 420px o MENOS*/
@@ -90,10 +90,6 @@ h1.introductionText {
     cursorBlink 1s infinite;
 }
 
-.centered {
-  text-align: center;
-}
-
 .navDesktop {
   display: none;
 }
@@ -101,7 +97,7 @@ h1.introductionText {
 a.phone,
 a.email {
   text-decoration: none;
-  color:var(--textPrincipalColor)
+  color: var(--textPrincipalColor);
 }
 
 img.responsive {
@@ -117,31 +113,29 @@ img.responsive {
 }
 
 a.linkedin {
-  color:var(--textPrincipalColor);
+  color: var(--textPrincipalColor);
 }
 a.linkedin:hover {
-  color:#0e76a8;
+  color: #0e76a8;
 }
 a.facebook {
-  color:var(--textPrincipalColor);
+  color: var(--textPrincipalColor);
 }
 a.facebook:hover {
-  color:#3b5998 ;
+  color: #3b5998;
 }
 a.twitter {
-  color:var(--textPrincipalColor);
+  color: var(--textPrincipalColor);
 }
 a.twitter:hover {
-  color:#00acee ;
+  color: #00acee;
 }
 a.instagram {
-  color:var(--textPrincipalColor);
+  color: var(--textPrincipalColor);
 }
 a.instagram:hover {
-  color:#3f729b ;
+  color: #3f729b;
 }
-
-
 
 /* ANIMACIONES CSS*/
 @keyframes typewriterEffect {
@@ -300,6 +294,21 @@ desaparece .mobileMenu */
   text-decoration: none;
   color: var(--textSecondaryColor);
 }
+.articleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.instagram,
+.linkedin,
+.twitter,
+.facebook {
+  font-size: 2rem;
+}
+.formulario form {
+  display: flex;
+  flex-direction: column;
+}
 
 /* TAMAÑO TABLET: DESDE 421px HASTA 960 px */
 @media screen and (min-width: 421px) {
@@ -315,16 +324,17 @@ desaparece .mobileMenu */
   }
   .headerWrapper {
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
   }
-  .article {
-    display: flex;
-  }
+
   .articleWrapper {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-end;
   }
-  
+  .articleWrapper * {
+    padding: 0 10px;
+  }
+
   .articleImg {
     max-width: 33%;
     margin: 5px;
@@ -333,16 +343,17 @@ desaparece .mobileMenu */
     display: none;
   }
   .navDesktop {
-    display:flex;
+    display: flex;
     min-width: 100%;
   }
   .navDesktop a {
     text-decoration: none;
-    color:var(--textSecondaryColor)
+    color: var(--textSecondaryColor);
   }
-  .navDesktop ul.menu, .navDesktop ul.submenu{
+  .navDesktop ul.menu,
+  .navDesktop ul.submenu {
     list-style-type: none;
-    padding: 0; 
+    padding: 0;
     text-align: center;
   }
   .navDesktop ul.menu {
@@ -350,75 +361,69 @@ desaparece .mobileMenu */
     display: flex;
     justify-content: space-between;
   }
-  
+
   ul.menu li {
     flex-grow: 1;
     padding: 0px;
+    transition: background-color 1s;
   }
-  
+  ul.menu li:hover {
+    background-color: var(--textSecondaryColor);
+  }
+
   ul.menu li:hover a {
-    color:var(--textPrincipalColor);
+    color: var(--textPrincipalColor);
   }
-  
+
   ul.menu li.dropdown {
-    position:relative;
-    padding-bottom:0px;
-    
+    position: relative;
+    padding-bottom: 0px;
   }
   .navDesktop ul.submenu {
-    display:none;
-    opacity:0;
-    animation: submenuAnimation 2s;
-
-  }
-  
-  li.dropdown:hover {
-    background-color: var(--textSecondaryColor);
-    border-radius: 10px;
-    z-index:2;
+    display: none;
+    opacity: 0;
+    animation: submenuAnimation 1s;
   }
 
-  li.dropdown:not(:hover) ul.submenu{
+
+
+  li.dropdown:not(:hover) ul.submenu {
     animation: submenuAnimationBack 2s;
   }
-  
-  li.dropdown:hover ul.submenu{
-    width:100%;
-    display:block;
-    opacity:1;
-    position:absolute;
-    left:0;
-    top:20px;
+
+  li.dropdown:hover ul.submenu {
+    width: 100%;
+    display: block;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 18px;
     background-color: var(--textSecondaryColor);
-    border-radius: 10px;
     padding: 15px 0;
-    z-index:0;
   }
-  
 
   @keyframes submenuAnimation {
     from {
-      opacity:0;
+      opacity: 0;
     }
     to {
-      opacity:1;
+      opacity: 1;
     }
   }
   /* TODO: No soy capaz de hacer la animación de regreso. Preguntar.... */
   @keyframes submenuAnimationBack {
     from {
-      opacity:1;
+      opacity: 1;
     }
     to {
-      opacity:0;
+      opacity: 0;
     }
   }
 
   ul.submenu li {
     padding: 10px 0;
-    font-size:0.75rem;
+    font-size: 0.75rem;
   }
-
 }
 /* TAMAÑO DESKTOP: DESDE 961px*/
 @media screen and (min-width: 961px) {
@@ -448,9 +453,40 @@ desaparece .mobileMenu */
     align-items: flex-end;
   }
 
+  .sectionWrapper.contact {
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .articleWrapper.contact * {
+    padding: 5px;
+  }
+
   .article {
-    max-width: 45%;
+    max-width: 50%;
     border-bottom-style: hidden;
     border-top-style: hidden;
+    justify-content: space-between;
+  }
+
+  .articleWrapper.contact {
+    min-width: 50%;
+    justify-content: center;
+  }
+  .articleWrapper.contact:not(.social) div:last-child {
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .articleWrapper.contact:not(.social) {
+    flex-direction: column;
+  }
+
+  .navDesktop {
+    flex-grow: 1;
+    min-width: 0%;
   }
 }
