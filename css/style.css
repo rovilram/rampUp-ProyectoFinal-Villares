@@ -335,6 +335,10 @@ div.about.css>i{
   color:#264de4;
 }
 
+.articleWrapper.about>div.articleText {
+  text-align:justify;
+  line-height: 125%;
+}
 @keyframes animationRotate{
   0%
   {
@@ -476,18 +480,28 @@ div.about.css>i{
 
   .article.about {
     max-width: 48%;
+    border-bottom: hidden;
+    border-top: hidden;
   }
 
   .articleWrapper.about {
     flex-direction: column;
   }
 
+  .mainWrapper.about {
+    flex-direction: row;
+  }
 
-
-
-
-
+  .image.about {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  }
 }
+
+  
+
+
 
 /* TAMAÑO DESKTOP: DESDE 961px*/
 @media screen and (min-width: 961px) {
@@ -548,5 +562,23 @@ div.about.css>i{
   .navDesktop {
     flex-grow: 1;
     min-width: 0%;
+  }
+
+  .mainWrapper.about {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .article.about {
+    min-width: 100%;
+  }
+  div.image.about {
+    flex-grow: 1;
+  }
+  .articleWrapper.about {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+
   }
 }
