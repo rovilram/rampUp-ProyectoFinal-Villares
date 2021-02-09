@@ -277,6 +277,7 @@ desaparece .mobileMenu */
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
   padding: 10px 0;
   border-top: 1px solid var(--backgroundColor);
   border-bottom: 1px solid var(--backgroundColor);
@@ -297,7 +298,8 @@ desaparece .mobileMenu */
 .articleWrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  padding:15px 0;
 }
 .instagram,
 .linkedin,
@@ -335,7 +337,7 @@ div.about.css>i{
   color:#264de4;
 }
 
-.articleWrapper.about>div.articleText {
+.articleText {
   text-align:justify;
   line-height: 125%;
 }
@@ -529,7 +531,7 @@ div.about.css>i{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .articleWrapper.contact * {
@@ -546,6 +548,9 @@ div.about.css>i{
   .articleWrapper.contact {
     min-width: 50%;
     justify-content: center;
+    align-items: center;
+    min-height: 120px;
+    padding-top: 0;
   }
   .articleWrapper.contact:not(.social) div:last-child {
     min-height: 70px;
