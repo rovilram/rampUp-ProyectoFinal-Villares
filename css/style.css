@@ -353,6 +353,12 @@ desaparece .mobileMenu */
     max-width: 50%;
   }
 
+  .article.about h2 {
+    min-width:100%;
+  }
+  .article.about img {
+    max-width:33%;
+  }
 
   .navMobile {
     display: none;
