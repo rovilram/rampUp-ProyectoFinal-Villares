@@ -3,6 +3,8 @@
   --textSecondaryColor: White;
   --backgroundSecondaryColor: #999;
   --textPrincipalColor: black;
+  --tabletMinSize:421px;
+  --desktopMinSize:961px;
 }
 
 /* TAMAÑO MÓVIL: 420px o MENOS*/
@@ -13,11 +15,11 @@ body {
 }
 h1,
 h2 {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Pangolin", sans-serif;
   font-weight: 600;
 }
-h3 {
-  font-family: "Work Sans", sans-serif;
+h3,nav {
+  font-family: "Pangolin", sans-serif;
   font-weight: 400;
 }
 
@@ -299,7 +301,7 @@ desaparece .mobileMenu */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding:15px 0;
+  padding: 15px 0;
 }
 .instagram,
 .linkedin,
@@ -312,42 +314,38 @@ desaparece .mobileMenu */
   flex-direction: column;
 }
 
-.articleText.about>div {
+.articleText.about > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
-div.about.html>i{
+div.about.html > i {
   font-size: 10rem;
-  color:#f06529;
+  color: #f06529;
 }
 
-div.about.html>i:hover,
-div.about.css>i:hover{
+div.about.html > i:hover,
+div.about.css > i:hover {
   animation: animationRotate 1s infinite;
 }
 
-
-
-
-div.about.css>i{
+div.about.css > i {
   font-size: 10rem;
-  color:#264de4;
+  color: #264de4;
 }
 
 .articleText {
-  text-align:justify;
+  text-align: justify;
   line-height: 125%;
 }
-@keyframes animationRotate{
-  0%
-  {
-    transform:none
+@keyframes animationRotate {
+  0% {
+    transform: none;
   }
   25% {
-    transform:rotate(15deg);
+    transform: rotate(15deg);
   }
   75% {
     transform: rotate(-15deg);
@@ -357,8 +355,6 @@ div.about.css>i{
   }
 }
 
-
-
 /* TAMAÑO TABLET: DESDE 421px HASTA 960 px */
 @media screen and (min-width: 421px) {
   .mainWrapper {
@@ -367,12 +363,12 @@ div.about.css>i{
   }
 
   .mainWrapper.about {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
   .mainWrapper.about .article {
-    margin:1%;
+    margin: 1%;
   }
 
   .header {
@@ -495,15 +491,11 @@ div.about.css>i{
   }
 
   .image.about {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
-  
-
-
 
 /* TAMAÑO DESKTOP: DESDE 961px*/
 @media screen and (min-width: 961px) {
@@ -582,8 +574,5 @@ div.about.css>i{
   .articleWrapper.about {
     flex-direction: row;
     align-items: flex-start;
-  }
-
-
   }
 }
