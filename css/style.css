@@ -82,6 +82,9 @@ img.logo {
   width: 100px;
   border-radius: 50%;
 }
+img.filter {
+  filter: brightness(0.5);
+}
 
 h1.introductionText {
   font-family: monospace;
