@@ -2,7 +2,7 @@
 PÁGINAS:
     ✔ index.html Página de bienvenida @done(21-02-07 20:37)
     ✔ biography.html Biografía @done(21-02-10 01:00)
-    ☐ portfolio.html Ejemplos de tu trabajo
+    ✔ portfolio.html Ejemplos de tu trabajo @done(21-02-10 22:10)
     ✔ contact.html Información de contacto @done(21-02-10 01:00)
 
 REQUERIMIENTOS:
@@ -13,12 +13,12 @@ REQUERIMIENTOS:
     ✔ Menú de navegación CON TRANSICIÓN @done(21-02-10 01:00)
     ✔ Hacer animación CSS @done(21-02-10 01:00)
     ✔ Utilizar VARIABLES css para COLORES @done(21-02-10 01:11)
-    ☐ Utilizar VARIABLES css para dimensiones
+    ✘ Utilizar VARIABLES css para dimensiones @cancelled(21-02-10 22:10)
     ✔ Usar FLEX para maquetar TODOS los bloques @done(21-02-10 01:11)
     ✔ Tiene que ser Responsive @done(21-02-10 01:11)
-    ☐ Hacer readme "chulo" para el repositorio y enlazar la web de gihub pages
-    ☐ corregir tamaño fotos portfolio
-    ☐ poner enlaces a github en portfolio
+    ✔ Hacer readme "chulo" para el repositorio y enlazar la web de gihub pages @done(21-02-10 22:10)
+    ✔ corregir tamaño fotos portfolio @done(21-02-10 22:10)
+    ✔ poner enlaces a github en portfolio @done(21-02-10 22:11)
 
 
 RECURSOS PARA HACER EL PROYECTO:
