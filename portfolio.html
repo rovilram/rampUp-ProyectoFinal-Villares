@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AVE-Dev - Desarrollo web - Portfolio</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="headerWrapper">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="AVE Dev Logo" class="logo">
+                </a>
+                <nav class="navDesktop">
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="biography.html">¿Quien soy?</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="portfolio.html">Mi portfolio</a>
+                            <!-- TODO: Cambiar referencias por los proyectos del portfolio -->
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">PROYECTO 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">PROYECTO 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">PROYECTO 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contactar</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="navMobile">
+                    <a id="menuIcon" href="#menuIcon">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <a id="menuIconClose" href="#">
+                        <i class="fas fa-times"></i>
+                    </a>
+                    <div class="mobileMenu">
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="biography.html">¿Quien soy?</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html">Mi portfolio</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contactar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h1>Portfolio</h1>
+            <div class="introduction portfolio">
+                Además de esta la web que estás viendo, a lo largo de las 2 semanas de iniciacion en HTML y CSS hemos realizado buena cantidad de ejercicios, algunos de ellos los puedes ver a continuación.
+            </div>
+            <div class="mainWrapper portfolio">
+                <article class="article portfolio">
+                    <h2>SPA</h2>
+                    <div class="articleWrapper portfolio">
+                        <div class="image portfolio"><img src="img/portfolioSPA.png" alt="captura SPA" class="responsive"></div>
+                        <div class="articleText">
+                            Esta web es un compendio de prácticas que habíamos hecho durante la primera semana de curso, maquetadas con lo que hasta ese momento sabíamos de css formando una SPA (Single Page Aplication).
+                        </div>
+                    </div>
+                </article>
+                <article class="article portfolio">
+                    <h2>Flexbox</h2>
+                    <div class="articleWrapper portfolio">
+                        <div class="image portfolio"><img src="img/portfolioCopleros.png" alt="captura card copleros" class="responsive"></div>
+                        <div class="articleText">
+                            Primer contacto con las 'flexbox' de CSS para formar un directorio de copleros en forma de tarjeta.
+                        </div>
+                    </div>
+                </article>
+                <article class="article portfolio">
+                    <h2>Transiciones y transformaciones CSS</h2>
+                    <div class="articleWrapper portfolio">
+                        <div class="image portfolio"><img src="img/portfolioCuentosAcido.png" alt="captura card cuentos de ácido" class="responsive"></div>
+                        <div class="articleText">
+                            Ejercicio para la prácticas de transiciones, transformaciones y animaciones CSS.
+                        </div>
+                    </div>
+                </article>
+                <article class="article portfolio">
+                    <h2>Animaciones CSS</h2>
+                    <div class="articleWrapper portfolio">
+                        <div class="image portfolio"><img src="img/portfolioThugLife.png" alt="captura card copleros" class="responsive"></div>
+                        <div class="articleText">
+                            Mediante la recreación del famoso meme Thug Life practicamos con las animaciones en CSS.
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footerWrapper">
+                <div class="footerName">Anatolio Fuentes</div>
+                <div class="footerAdress"> 13, Rue Percebe (Villarriba, Spain)</div>
+                <div class="footerPhone">+34 666 66 66</div>
+                <div class="footerMail">
+                    <a href="mailto://anatoliofuentes@avedev.com">anatoliofuentes@avedev.com</a>
+                </div>
+            </div>
+            <small class="copy">&COPY; Copyright 2021 - AVE Dev</small>
+        </footer>
+    </body>
+</html>
