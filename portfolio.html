@@ -32,13 +32,16 @@
                             <!-- TODO: Cambiar referencias por los proyectos del portfolio -->
                             <ul class="submenu">
                                 <li>
-                                    <a href="#">PROYECTO 1</a>
+                                    <a href="#spa">SPA</a>
                                 </li>
                                 <li>
-                                    <a href="#">PROYECTO 2</a>
+                                    <a href="#flexbox">Flexbox</a>
                                 </li>
                                 <li>
-                                    <a href="#">PROYECTO 3</a>
+                                    <a href="#transition">Transiciones y transformaciones CSS</a>
+                                </li>
+                                <li>
+                                    <a href="#animation">Animaciones CSS</a>
                                 </li>
                             </ul>
                         </li>
@@ -76,24 +79,33 @@
             </div>
         </header>
         <main>
-            <h1>Portfolio</h1>
-            <div class="introduction portfolio">
-                Además de esta la web que estás viendo, a lo largo de las 2 semanas de iniciacion en HTML y CSS hemos realizado buena cantidad de ejercicios, algunos de ellos los puedes ver a continuación.
-            </div>
             <div class="mainWrapper portfolio">
-                <article class="article portfolio">
-                    <h2>SPA</h2>
-                    <div class="articleWrapper portfolio">
-                        <div class="image portfolio"><img src="img/portfolioSPA.png" alt="captura SPA" class="responsive"></div>
+                <h1>Portfolio</h1>
+                <div class="introduction portfolio articleText">
+                    Además de esta la web que estás viendo, a lo largo de las 2 semanas de iniciacion en HTML y CSS hemos realizado buena cantidad de ejercicios, algunos de ellos los puedes ver a continuación.
+                </div>
+                <div class="sectionWrapper portfolio">
+                    <article id="spa" class="article portfolio">
+                        <h2>SPA</h2>
+                        <div class="articleWrapper portfolio">
+                            <div class="image portfolio">
+                                <a href="https://rovilram.github.io/spa-css/index" target="_blank">
+                                <img src="img/portfolioSPA.png" alt="captura SPA" class="responsive">
+                            </a>
+                        </div>
                         <div class="articleText">
                             Esta web es un compendio de prácticas que habíamos hecho durante la primera semana de curso, maquetadas con lo que hasta ese momento sabíamos de css formando una SPA (Single Page Aplication).
                         </div>
                     </div>
                 </article>
-                <article class="article portfolio">
+                <article id="flexbox" class="article portfolio">
                     <h2>Flexbox</h2>
                     <div class="articleWrapper portfolio">
-                        <div class="image portfolio"><img src="img/portfolioCopleros.png" alt="captura card copleros" class="responsive"></div>
+                        <div class="image portfolio">
+                            <a href="https://rovilram.github.io/bootcamp-copleros/index.html" target="_blank">
+                                <img src="img/portfolioCopleros.png" alt="captura card copleros" class="responsive">
+                            </a>
+                        </div>
                         <div class="articleText">
                             Primer contacto con las 'flexbox' de CSS para formar un directorio de copleros en forma de tarjeta.
                         </div>
@@ -101,34 +113,43 @@
                 </article>
                 <article class="article portfolio">
                     <h2>Transiciones y transformaciones CSS</h2>
-                    <div class="articleWrapper portfolio">
-                        <div class="image portfolio"><img src="img/portfolioCuentosAcido.png" alt="captura card cuentos de ácido" class="responsive"></div>
-                        <div class="articleText">
-                            Ejercicio para la prácticas de transiciones, transformaciones y animaciones CSS.
-                        </div>
+                    <div  id="transition" class="articleWrapper portfolio">
+                        <div class="image portfolio">
+                            <a href="https://rovilram.github.io/bootcamp-cuentosAcido/index.html" target="_blank">
+                            <img src="img/portfolioCuentosAcido.png" alt="captura card cuentos de ácido" class="responsive">
+                        </a>
                     </div>
-                </article>
-                <article class="article portfolio">
-                    <h2>Animaciones CSS</h2>
-                    <div class="articleWrapper portfolio">
-                        <div class="image portfolio"><img src="img/portfolioThugLife.png" alt="captura card copleros" class="responsive"></div>
-                        <div class="articleText">
-                            Mediante la recreación del famoso meme Thug Life practicamos con las animaciones en CSS.
-                        </div>
+                    <div class="articleText">
+                        Ejercicio para la práctica de transiciones, transformaciones y animaciones CSS.
                     </div>
-                </article>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footerWrapper">
-                <div class="footerName">Anatolio Fuentes</div>
-                <div class="footerAdress"> 13, Rue Percebe (Villarriba, Spain)</div>
-                <div class="footerPhone">+34 666 66 66</div>
-                <div class="footerMail">
-                    <a href="mailto://anatoliofuentes@avedev.com">anatoliofuentes@avedev.com</a>
+                </div>
+            </article>
+            <article id="animation" class="article portfolio">
+                <h2>Animaciones CSS</h2>
+                <div class="articleWrapper portfolio">
+                    <div class="image portfolio">
+                        <a href="https://rovilram.github.io/bootcamp-thuglife/index.html" target="_blank">
+                        <img src="img/portfolioThugLife.png" alt="captura card copleros" class="responsive">
+                    </a>
+                </div>
+                <div class="articleText">
+                    Mediante la recreación del famoso meme Thug Life practicamos con las animaciones en CSS.
                 </div>
             </div>
-            <small class="copy">&COPY; Copyright 2021 - AVE Dev</small>
-        </footer>
-    </body>
+        </article>
+    </div>
+</div>
+</main>
+<footer class="footer">
+    <div class="footerWrapper">
+        <div class="footerName">Anatolio Fuentes</div>
+        <div class="footerAdress"> 13, Rue Percebe (Villarriba, Spain)</div>
+        <div class="footerPhone">+34 666 66 66</div>
+        <div class="footerMail">
+            <a href="mailto://anatoliofuentes@avedev.com">anatoliofuentes@avedev.com</a>
+        </div>
+    </div>
+    <small class="copy">&COPY; Copyright 2021 - AVE Dev</small>
+</footer>
+</body>
 </html>

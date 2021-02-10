@@ -66,6 +66,11 @@ h3 {
   justify-content: center;
 }
 
+.introduction.portfolio {
+  padding:30px 0;
+}
+
+
 div.introductionText {
   position: absolute;
   display: flex;
@@ -387,12 +392,14 @@ div.about.css > i {
     justify-content: center;
   }
 
+
   .articleWrapper {
     flex-direction: row;
     justify-content: flex-end;
   }
   .articleWrapper * {
     padding: 0 10px;
+    flex-basis: 50%;
   }
 
 
@@ -513,6 +520,12 @@ div.about.css > i {
     margin: 0 auto;
     flex-direction: row;
   }
+
+  .mainWrapper.portfolio {
+    flex-direction:column;
+  }
+  
+  
   .header {
     height: 100px;
   }
@@ -531,6 +544,7 @@ div.about.css > i {
     justify-content: center;
     align-items: flex-start;
   }
+
 
   .articleWrapper.contact * {
     padding: 5px;
