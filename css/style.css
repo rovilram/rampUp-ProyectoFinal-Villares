@@ -303,6 +303,11 @@ desaparece .mobileMenu */
   align-items: flex-start;
   padding: 15px 0;
 }
+
+.articleWrapper.contact {
+  align-items: center;
+}
+
 .instagram,
 .linkedin,
 .twitter,
@@ -389,6 +394,7 @@ div.about.css > i {
   .articleWrapper * {
     padding: 0 10px;
   }
+
 
   .articleImg {
     max-width: 33%;
